@@ -1388,6 +1388,7 @@ h6 {
     height: 100px;
     object-fit: contain;
     border-radius: var(--radius-sm);
+    filter: brightness(0) invert(1);
 }
 
 .footer .logo-name {
