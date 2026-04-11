@@ -91,60 +91,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* === Preloader === */
-#preloader {
-    position: fixed;
-    inset: 0;
-    z-index: 10000;
-    background: var(--light-100);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.6s ease, visibility 0.6s ease;
-}
-
-#preloader.loaded {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.loader-content {
-    text-align: center;
-}
-
-.loader-logo img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    animation: pulse-glow 2s ease-in-out infinite;
-}
-
-.loader-bar {
-    width: 200px;
-    height: 3px;
-    background: var(--light-300);
-    border-radius: 10px;
-    margin-top: 24px;
-    overflow: hidden;
-}
-
-.loader-bar-inner {
-    width: 0%;
-    height: 100%;
-    background: var(--gradient-primary);
-    border-radius: 10px;
-    animation: loader-progress 1.5s ease-out forwards;
-}
-
-@keyframes loader-progress {
-    0% { width: 0%; }
-    100% { width: 100%; }
-}
-
-@keyframes pulse-glow {
-    0%, 100% { filter: brightness(1) drop-shadow(0 0 10px rgba(200,146,42,0.3)); }
-    50% { filter: brightness(1.2) drop-shadow(0 0 25px rgba(200,146,42,0.6)); }
-}
 
 /* === Container === */
 .container {
@@ -523,15 +469,15 @@ body {
 }
 
 .btn-outline {
-    background: transparent;
-    color: var(--dark-900);
-    border: 2px solid var(--border-color);
+    background: var(--light-100);
+    color: var(--primary);
+    border: 2px solid var(--primary);
 }
 
 .btn-outline:hover {
-    border-color: var(--primary);
-    color: var(--primary);
-    background: rgba(27, 60, 90, 0.05);
+    border-color: var(--primary-light);
+    color: var(--primary-light);
+    background: var(--light-200);
     transform: translateY(-2px);
 }
 

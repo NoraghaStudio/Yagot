@@ -4,20 +4,8 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ====================
-    // Preloader
-    // ====================
-    const preloader = document.getElementById('preloader');
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.classList.add('loaded');
-            setTimeout(() => {
-                preloader.style.display = 'none';
-                // Trigger initial animations
-                animateElements();
-            }, 600);
-        }, 1200);
-    });
+    // Trigger initial animations
+    animateElements();
 
     // ====================
     // Navbar Scroll
