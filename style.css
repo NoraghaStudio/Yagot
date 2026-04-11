@@ -567,7 +567,7 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 64px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .about-text p {
@@ -630,11 +630,18 @@ h6 {
     margin: 0;
 }
 
+.about-visual {
+    height: 100%;
+    min-height: 0;
+}
+
 .about-image-wrapper {
     position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
+    height: 100%;
+    min-height: 0;
 }
 
 .about-image-wrapper img {
@@ -1086,12 +1093,14 @@ h6 {
    PARTNERS SECTION
    ===================================================== */
 .partners-showcase {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
 }
 
 .partner-card {
+    flex: 0 0 calc(25% - 18px);
     background: var(--light-100);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg);
@@ -1633,6 +1642,11 @@ h6 {
 
     .about-visual {
         order: -1;
+        height: auto;
+    }
+
+    .about-image-wrapper {
+        height: auto;
     }
 
     .mining-card-large {
@@ -1648,7 +1662,11 @@ h6 {
     }
 
     .partners-showcase {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+    
+    .partner-card {
+        flex: 0 0 calc(50% - 8px);
     }
 
     .contact-grid {
@@ -1692,7 +1710,11 @@ h6 {
     }
 
     .partners-showcase {
-        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+    
+    .partner-card {
+        flex: 0 0 calc(50% - 6px);
     }
 
     .footer-grid {
@@ -1738,7 +1760,11 @@ h6 {
     }
 
     .partners-showcase {
-        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .partner-card {
+        flex: 0 0 100%;
     }
 
     .cta-actions {
