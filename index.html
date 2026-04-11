@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شركة التعدين والخدمات اللوجستية | رخص تعدين وخدمات نقل</title>
+    <meta name="description"
+        content="شركة رائدة في استخراج رخص التعدين من منصة إسناد وتقديم الخدمات اللوجستية والنقليات الثقيلة والخفيفة. شريك أرامكو وسابك الموثوق.">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <img src="assets/images/favicon.png" alt="شعار الياقوت">
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="assets/images/logo.png" alt="شعار الياقوت">
+                <div class="logo-text">
+                    <span class="logo-name">الياقوت</span>
+                    <span class="logo-tagline">للتعدين واللوجستيات</span>
+                </div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+                <li><a href="#about" class="nav-link">من نحن</a></li>
+                <li><a href="#mining" class="nav-link">خدمات التعدين</a></li>
+                <li><a href="#logistics" class="nav-link">الخدمات اللوجستية</a></li>
+                <li><a href="#licenses" class="nav-link">أنواع الرخص</a></li>
+                <li><a href="#partners" class="nav-link">شركاؤنا</a></li>
+                <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-slide active"
+                style="background-image: url('https://images.unsplash.com/photo-1578319439584-1d22748880aa?q=80&w=1920&auto=format')">
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="particles"></div>
+        <div class="container hero-content">
+            <div class="hero-badge" data-animate="fade-down">
+                <i class="fas fa-gem"></i>
+                <span>شريككم الموثوق في التعدين والنقل</span>
+            </div>
+            <h1 class="hero-title" data-animate="fade-up">
+                <span class="hero-title-line">خبراء في</span>
+                <span class="hero-title-highlight">رخص التعدين والخدمات اللوجستية</span>
+            </h1>
+            <p class="hero-description" data-animate="fade-up" data-delay="200">
+                نقدم حلولاً متكاملة في استخراج رخص التعدين من منصة تعدين (إسناد) وتوفير الخدمات اللوجستية والنقليات
+                الثقيلة والخفيفة بشراكات استراتيجية مع كبرى الشركات
+            </p>
+            <div class="hero-actions" data-animate="fade-up" data-delay="400">
+                <a href="#mining" class="btn btn-primary btn-glow">
+                    <i class="fas fa-mountain"></i>
+                    خدمات التعدين
+                </a>
+                <a href="#logistics" class="btn btn-outline">
+                    <i class="fas fa-truck"></i>
+                    الخدمات اللوجستية
+                </a>
+            </div>
+            <div class="hero-stats" data-animate="fade-up" data-delay="600">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">رخصة مُستخرجة</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">شاحنة نقل</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="15">0</div>
+                    <div class="stat-label">سنة خبرة</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="200">0</div>
+                    <div class="stat-label">عميل راضٍ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">من نحن</span>
+                <h2 class="section-title">شريككم في بناء المستقبل</h2>
+                <p class="section-subtitle">نجمع بين خبرات التعدين والحلول اللوجستية لتقديم خدمات استثنائية</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-content" data-animate="fade-right">
+                    <div class="about-text">
+                        <p>نحن شركة رائدة في مجال خدمات التعدين والخدمات اللوجستية في المملكة العربية السعودية. نقدم
+                            حلولاً شاملة تبدأ من استخراج رخص التعدين عبر منصة تعدين الإلكترونية (إسناد) بمختلف أنواعها،
+                            وصولاً إلى توفير أسطول متكامل من النقليات الثقيلة والخفيفة.</p>
+                        <p>نفخر بشراكاتنا الاستراتيجية مع كبرى الشركات في المملكة مثل شركة أرامكو السعودية وسابك، حيث
+                            نقدم خدمات لوجستية موثوقة وعالية الجودة تلبي أعلى المعايير.</p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>موثوقية تامة</h4>
+                                <p>التزام كامل بالمواعيد والمعايير</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>سرعة في الإنجاز</h4>
+                                <p>إتمام المعاملات في أسرع وقت</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>شراكات استراتيجية</h4>
+                                <p>علاقات وثيقة مع كبرى الشركات</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-animate="fade-left">
+                    <div class="about-image-wrapper">
+                        <img src="assets/images/mining-license.png" alt="خدمات التعدين">
+                        <div class="about-image-badge">
+                            <span class="badge-number">+15</span>
+                            <span class="badge-text">سنة خبرة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mining Services Section -->
+    <section id="mining" class="mining section section-dark">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">القسم الأول</span>
+                <h2 class="section-title">خدمات التعدين</h2>
+                <p class="section-subtitle">نقدم خدمات شاملة في مجال التعدين عبر منصة تعدين الإلكترونية (إسناد)</p>
+            </div>
+            <div class="mining-showcase">
+                <div class="mining-main" data-animate="fade-right">
+                    <div class="mining-card-large">
+                        <div class="mining-card-image">
+                            <img src="assets/images/mining-hero.png" alt="أنشطة التعدين">
+                        </div>
+                        <div class="mining-card-overlay">
+                            <div class="mining-card-content">
+                                <span class="mining-card-tag">منصة إسناد</span>
+                                <h3>استخراج رخص التعدين</h3>
+                                <p>نوفر خدمات استخراج جميع أنواع رخص التعدين من منصة تعدين (إسناد) الإلكترونية بكل سهولة
+                                    واحترافية</p>
+                                <a href="#contact" class="btn btn-primary btn-sm">
+                                    احصل على الخدمة الآن
+                                    <i class="fas fa-arrow-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mining-services-list" data-animate="fade-left">
+                    <a href="#contact" class="mining-service-item">
+                        <div class="mining-service-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="mining-service-content">
+                            <h4>استخراج الرخص</h4>
+                            <p>استخراج جميع أنواع رخص التعدين: كشف، استطلاع، منجم صغير، استغلال، مواد بناء، فائض خام،
+                                وأغراض عامة</p>
+                        </div>
+                        <div class="mining-service-arrow">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                    </a>
+                    <a href="#contact" class="mining-service-item">
+                        <div class="mining-service-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="mining-service-content">
+                            <h4>بيع وشراء التراخيص</h4>
+                            <p>خدمات الوساطة في بيع وشراء تراخيص التعدين بأنواعها المختلفة مع ضمان الحقوق الكاملة لجميع
+                                الأطراف</p>
+                        </div>
+                        <div class="mining-service-arrow">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                    </a>
+                    <a href="#contact" class="mining-service-item">
+                        <div class="mining-service-icon">
+                            <i class="fas fa-people-arrows"></i>
+                        </div>
+                        <div class="mining-service-content">
+                            <h4>التنازل عن الرخص</h4>
+                            <p>إدارة عمليات التنازل عن رخص التعدين وفق الأنظمة واللوائح المعتمدة من وزارة الصناعة
+                                والثروة المعدنية</p>
+                        </div>
+                        <div class="mining-service-arrow">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                    </a>
+                    <a href="#contact" class="mining-service-item">
+                        <div class="mining-service-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="mining-service-content">
+                            <h4>الاستشارات التعدينية</h4>
+                            <p>تقديم استشارات متخصصة حول أفضل أنواع الرخص المناسبة لمشروعكم ومتابعة الإجراءات حتى
+                                الإصدار</p>
+                        </div>
+                        <div class="mining-service-arrow">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Logistics Services Section -->
+    <section id="logistics" class="logistics section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">القسم الثاني</span>
+                <h2 class="section-title">الخدمات اللوجستية</h2>
+                <p class="section-subtitle">نوفر أسطولاً متكاملاً من النقليات الثقيلة والخفيفة لخدمة كبرى الشركات</p>
+            </div>
+            <div class="logistics-grid">
+                <div class="logistics-card" data-animate="fade-up" data-delay="0">
+                    <div class="logistics-card-icon">
+                        <i class="fas fa-truck-moving"></i>
+                    </div>
+                    <h3>النقليات الثقيلة</h3>
+                    <p>أسطول من الشاحنات والمعدات الثقيلة لنقل المواد والمعدات الضخمة بأمان تام</p>
+                    <ul class="logistics-features">
+                        <li><i class="fas fa-check"></i> شاحنات قلاب</li>
+                        <li><i class="fas fa-check"></i> لوبيدات</li>
+                        <li><i class="fas fa-check"></i> حفارات ومعدات ثقيلة</li>
+                        <li><i class="fas fa-check"></i> رافعات متنوعة</li>
+                    </ul>
+                    <div class="logistics-card-glow"></div>
+                </div>
+                <div class="logistics-card" data-animate="fade-up" data-delay="100">
+                    <div class="logistics-card-icon">
+                        <i class="fas fa-truck-pickup"></i>
+                    </div>
+                    <h3>النقليات الخفيفة</h3>
+                    <p>مركبات خفيفة متنوعة لنقل المواد والأدوات وفرق العمل بكفاءة عالية</p>
+                    <ul class="logistics-features">
+                        <li><i class="fas fa-check"></i> سيارات نقل</li>
+                        <li><i class="fas fa-check"></i> فانات مجهزة</li>
+                        <li><i class="fas fa-check"></i> نقل أفراد</li>
+                        <li><i class="fas fa-check"></i> خدمات توصيل</li>
+                    </ul>
+                    <div class="logistics-card-glow"></div>
+                </div>
+                <div class="logistics-card" data-animate="fade-up" data-delay="200">
+                    <div class="logistics-card-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3>العقود والشراكات</h3>
+                    <p>عقود نقل وخدمات لوجستية طويلة المدى مع كبرى الشركات في المملكة</p>
+                    <ul class="logistics-features">
+                        <li><i class="fas fa-check"></i> شركة أرامكو</li>
+                        <li><i class="fas fa-check"></i> شركة سابك</li>
+                        <li><i class="fas fa-check"></i> شركات المقاولات</li>
+                        <li><i class="fas fa-check"></i> الجهات الحكومية</li>
+                    </ul>
+                    <div class="logistics-card-glow"></div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Licenses Section -->
+    <section id="licenses" class="licenses section section-dark">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">منصة تعدين (إسناد)</span>
+                <h2 class="section-title">أنواع رخص التعدين</h2>
+                <p class="section-subtitle">نستخرج جميع أنواع الرخص المتاحة عبر منصة تعدين الإلكترونية</p>
+            </div>
+            <div class="licenses-grid">
+                <div class="license-card" data-animate="fade-up" data-delay="0">
+                    <div class="license-card-header">
+                        <div class="license-icon">
+                            <i class="fas fa-search-location"></i>
+                        </div>
+                        <span class="license-number">01</span>
+                    </div>
+                    <h3>رخصة الكشف</h3>
+                    <p>تمنح رخصة الكشف للمستثمر الحق الحصري في الكشف عن معادن محددة في منطقة محددة من خلال التعدين
+                        السطحي والتحليل الجيوفيزيائي/الجيوكيميائي</p>
+                    <div class="license-card-footer">
+                    </div>
+                </div>
+                <div class="license-card" data-animate="fade-up" data-delay="50">
+                    <div class="license-card-header">
+                        <div class="license-icon">
+                            <i class="fas fa-binoculars"></i>
+                        </div>
+                        <span class="license-number">02</span>
+                    </div>
+                    <h3>رخصة الاستطلاع</h3>
+                    <p>تمنح رخصة الاستطلاع للمستثمر الحق بالاستكشاف عن المعادن المستهدفة من خلال زيارة المناطق المختارة
+                        بالإضافة إلى جمع عينات من الأراضي المحددة</p>
+                    <div class="license-card-footer">
+                    </div>
+                </div>
+                <div class="license-card" data-animate="fade-up" data-delay="100">
+                    <div class="license-card-header">
+                        <div class="license-icon">
+                            <i class="fas fa-mountain"></i>
+                        </div>
+                        <span class="license-number">03</span>
+                    </div>
+                    <h3>رخصة التعدين</h3>
+                    <p>تمنح رخصة التعدين للمستثمر الحق في تعدين واستغلال المعادن المحددة من الفئتين (أ) و(ب) بالإضافة
+                        إلى نقل وبيع المعادن المستغلة مع الحقوق التشغيلية</p>
+                    <div class="license-card-footer">
+                    </div>
+                </div>
+                <div class="license-card" data-animate="fade-up" data-delay="150">
+                    <div class="license-card-header">
+                        <div class="license-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <span class="license-number">04</span>
+                    </div>
+                    <h3>رخصة المنجم الصغير</h3>
+                    <p>تمنح رخصة المنجم الصغير للمستثمر الحق الحصري من استخراج الخامات والمعادن (تعديناً وتحجيراً) من
+                        خلال منجم لا تتجاوز مساحته الكيلو متر مربع</p>
+                    <div class="license-card-footer">
+                    </div>
+                </div>
+                <div class="license-card" data-animate="fade-up" data-delay="200">
+                    <div class="license-card-header">
+                        <div class="license-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <span class="license-number">05</span>
+                    </div>
+                    <h3>رخصة مواد البناء</h3>
+                    <p>تمنح رخصة مواد البناء للمستثمر الحق في تعدين واستغلال المعادن المحددة من الفئة(ج) بالإضافة إلى
+                        نقل وبيع المعادن المستغلة مع الحقوق التشغيلية الكاملة</p>
+                    <div class="license-card-footer">
+                    </div>
+                </div>
+                <div class="license-card" data-animate="fade-up" data-delay="250">
+                    <div class="license-card-header">
+                        <div class="license-icon">
+                            <i class="fas fa-boxes-stacked"></i>
+                        </div>
+                        <span class="license-number">06</span>
+                    </div>
+                    <h3>رخصة فائض الخام</h3>
+                    <p>تتيح هذه الرخصة من نقل الخامات المعدنية للفئة (ج) خارج الموقع بهدف بيعها أو الاستفادة منها والتي
+                        تكون موجودة في مواقع المشاريع أو الأراضي المملوكة</p>
+                    <div class="license-card-footer">
+                    </div>
+                </div>
+                <div class="license-card" data-animate="fade-up" data-delay="300">
+                    <div class="license-card-header">
+                        <div class="license-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <span class="license-number">07</span>
+                    </div>
+                    <h3>رخصة أغراض عامة</h3>
+                    <p>تسمح هذه الرخصة للمستثمر الحامل لرخصة التعدين أو رخصة المنجم الصغير من إنشاء مرافق أو استخدام
+                        أراضي خارج موقع الرخصة لتحقيق أغراض الرخصة</p>
+                    <div class="license-card-footer">
+                    </div>
+                </div>
+                <div class="license-card license-card-cta" data-animate="fade-up" data-delay="350">
+                    <div class="license-cta-content">
+                        <i class="fas fa-headset"></i>
+                        <h3>تحتاج مساعدة؟</h3>
+                        <p>تواصل معنا لمعرفة نوع الرخصة المناسب لمشروعك</p>
+                        <a href="#contact" class="btn btn-primary btn-sm">تواصل الآن</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners section">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">شراكات استراتيجية</span>
+                <h2 class="section-title">شركاؤنا في النجاح</h2>
+                <p class="section-subtitle">نفتخر بشراكاتنا مع كبرى الشركات في المملكة العربية السعودية</p>
+            </div>
+            <div class="partners-showcase" data-animate="fade-up">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-oil-well"></i>
+                    </div>
+                    <h4>أرامكو السعودية</h4>
+                    <p>عقود نقل وخدمات لوجستية</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <h4>شركة سابك</h4>
+                    <p>خدمات نقل المواد الصناعية</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-landmark"></i>
+                    </div>
+                    <h4>وزارة الصناعة</h4>
+                    <p>رخص التعدين والثروة المعدنية</p>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <h4>شركات المقاولات</h4>
+                    <p>توفير المعدات والنقليات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg" style="background-image: url('assets/images/truck-transport.png')"></div>
+        <div class="cta-overlay"></div>
+        <div class="container cta-content" data-animate="fade-up">
+            <h2>مستعد لبدء مشروعك التعديني؟</h2>
+            <p>دعنا نساعدك في استخراج الرخص المناسبة وتوفير الحلول اللوجستية المتكاملة</p>
+            <div class="cta-actions">
+                <a href="#contact" class="btn btn-primary btn-lg btn-glow">
+                    <i class="fas fa-paper-plane"></i>
+                    تواصل معنا الآن
+                </a>
+                <a href="tel:+966500000000" class="btn btn-outline btn-lg">
+                    <i class="fas fa-phone"></i>
+                    اتصل بنا
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section section-dark">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">تواصل معنا</span>
+                <h2 class="section-title">نسعد بتواصلكم</h2>
+                <p class="section-subtitle">فريقنا جاهز لخدمتكم وتقديم أفضل الحلول لاحتياجاتكم</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <div class="contact-info-card">
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>اتصل بنا</h4>
+                                <a href="tel:+966500000000">+966 50 000 0000</a>
+                                <a href="tel:+966500000001">+966 50 000 0001</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>البريد الإلكتروني</h4>
+                                <a href="mailto:info@company.sa">info@company.sa</a>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>الموقع</h4>
+                                <p>المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>ساعات العمل</h4>
+                                <p>الأحد - الخميس: 8:00 ص - 5:00 م</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://wa.me/966531341308" target="_blank" class="social-link" aria-label="واتساب"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link" aria-label="تويتر"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" class="social-link" aria-label="انستقرام"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" aria-label="لينكدإن"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-animate="fade-left">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">رقم الجوال</label>
+                                <input type="tel" id="phone" name="phone" placeholder="05XXXXXXXX">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">نوع الخدمة</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>اختر نوع الخدمة</option>
+                                <optgroup label="خدمات التعدين">
+                                    <option value="exploration">رخصة الكشف</option>
+                                    <option value="survey">رخصة الاستطلاع</option>
+                                    <option value="mining">رخصة التعدين</option>
+                                    <option value="small-mine">رخصة المنجم الصغير</option>
+                                    <option value="building-materials">رخصة مواد البناء</option>
+                                    <option value="surplus">رخصة فائض الخام</option>
+                                    <option value="general">رخصة أغراض عامة</option>
+                                    <option value="buy-sell">بيع وشراء تراخيص</option>
+                                    <option value="transfer">تنازل عن رخصة</option>
+                                </optgroup>
+                                <optgroup label="خدمات لوجستية">
+                                    <option value="heavy-transport">نقليات ثقيلة</option>
+                                    <option value="light-transport">نقليات خفيفة</option>
+                                    <option value="contract">عقود نقل</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" name="message" rows="4" placeholder="اكتب رسالتك هنا..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="شعار الياقوت">
+                        <div class="logo-text">
+                            <span class="logo-name">الياقوت</span>
+                            <span class="logo-tagline">للتعدين واللوجستيات</span>
+                        </div>
+                    </div>
+                    <p>شركة رائدة في مجال خدمات التعدين والخدمات اللوجستية في المملكة العربية السعودية، نقدم حلولاً
+                        شاملة ومتكاملة.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#mining">خدمات التعدين</a></li>
+                        <li><a href="#logistics">الخدمات اللوجستية</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>خدماتنا</h4>
+                    <ul>
+                        <li><a href="#licenses">رخص التعدين</a></li>
+                        <li><a href="#mining">بيع وشراء الرخص</a></li>
+                        <li><a href="#logistics">النقليات الثقيلة</a></li>
+                        <li><a href="#logistics">النقليات الخفيفة</a></li>
+                        <li><a href="#partners">عقود الشراكات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>معلومات التواصل</h4>
+                    <ul>
+                        <li><i class="fas fa-phone-alt"></i> +966 50 000 0000</li>
+                        <li><i class="fas fa-envelope"></i> info@company.sa</li>
+                        <li><i class="fas fa-map-marker-alt"></i> المملكة العربية السعودية</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 شركة التعدين والخدمات اللوجستية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="العودة للأعلى">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/966531341308" class="whatsapp-float" target="_blank" aria-label="تواصل واتساب">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
