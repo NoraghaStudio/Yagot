@@ -1445,9 +1445,9 @@ h6 {
 }
 
 .footer-contact i {
-    color: var(--primary);
-    font-size: 0.9rem;
-    width: 20px;
+    color: white;
+    font-size: 1rem;
+    width: 24px;
 }
 
 .footer-bottom {
