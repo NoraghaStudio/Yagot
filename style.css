@@ -1486,6 +1486,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 99;
     transition: all var(--transition-normal);
     animation: whatsapp-pulse 2s ease-in-out infinite;
+    border: none;
+    text-decoration: none;
 }
 
 .whatsapp-float:hover {
