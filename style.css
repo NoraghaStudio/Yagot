@@ -5,21 +5,24 @@
 /* === CSS Variables === */
 :root {
     /* Primary Colors - Deep Navy & Hover (Updated per request) */
-    --primary: #132B4F; 
-    --primary-light: #324B4C; 
+    --primary: #132B4F;
+    --primary-light: #324B4C;
     --primary-dark: #0d2840;
     --primary-glow: rgba(19, 43, 79, 0.2);
 
     /* Light Palette - Backgrounds (Updated per request) */
-    --light-100: #F4F4F2; /* Creamy White background */
+    --light-100: #F4F4F2;
+    /* Creamy White background */
     --light-200: #ecece9;
     --light-300: #e2e2df;
     --light-400: #868e96;
     --light-500: #495057;
 
     /* Text Colors (Updated per request) */
-    --text-main: #333333; /* Very Dark Grey for readability */
-    --text-accent: #C9B896; /* Button text color */
+    --text-main: #333333;
+    /* Very Dark Grey for readability */
+    --text-accent: #C9B896;
+    /* Button text color */
 
     /* Dark Palette */
     --dark-900: #132B4F;
@@ -51,9 +54,9 @@
     --border-glass: rgba(0, 0, 0, 0.05);
 
     /* Shadows */
-    --shadow-sm: 0 2px 10px rgba(0,0,0,0.05);
-    --shadow-md: 0 8px 30px rgba(0,0,0,0.08);
-    --shadow-lg: 0 20px 60px rgba(0,0,0,0.12);
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.12);
     --shadow-glow: 0 0 30px rgba(19, 43, 79, 0.15);
 
     /* Border Radius */
@@ -69,20 +72,23 @@
     --transition-spring: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-section, .hero {
-    scroll-margin-top: 80px;
+section,
+.hero {
+    scroll-margin-top: 160px;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
     font-size: 16px;
-    zoom: 0.85;
     overflow-x: hidden;
     width: 100%;
 }
@@ -96,7 +102,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-primary);
     font-weight: 700;
 }
@@ -113,13 +124,16 @@ h1, h2, h3, h4, h5, h6 {
 ::-webkit-scrollbar {
     width: 8px;
 }
+
 ::-webkit-scrollbar-track {
     background: var(--dark-900);
 }
+
 ::-webkit-scrollbar-thumb {
     background: var(--dark-500);
     border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: var(--primary);
 }
@@ -165,8 +179,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-logo img {
-    width: 48px;
-    height: 48px;
+    width: 120px;
+    height: 120px;
     object-fit: contain;
     border-radius: var(--radius-sm);
 }
@@ -247,9 +261,11 @@ h1, h2, h3, h4, h5, h6 {
 .nav-toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
+
 .nav-toggle.active span:nth-child(2) {
     opacity: 0;
 }
+
 .nav-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
@@ -275,21 +291,14 @@ h1, h2, h3, h4, h5, h6 {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.7) 0%,
-        rgba(255, 255, 255, 0.4) 50%,
-        rgba(255, 255, 255, 0.8) 100%
-    );
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.7) 0%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.8) 100%);
     z-index: 1;
 }
 
-.hero-particles {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    pointer-events: none;
-}
+
 
 .hero-content {
     position: relative;
@@ -429,8 +438,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes float-down {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(8px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
 }
 
 /* =====================================================
@@ -506,7 +522,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-dark {
-    background: var(--light-300); /* Beige background like the box in the image */
+    background: var(--light-300);
+    /* Beige background like the box in the image */
 }
 
 .section-header {
@@ -682,7 +699,7 @@ h1, h2, h3, h4, h5, h6 {
 .mining-card-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(10,14,23,0.95) 0%, rgba(10,14,23,0.3) 60%, transparent 100%);
+    background: linear-gradient(to top, rgba(10, 14, 23, 0.95) 0%, rgba(10, 14, 23, 0.3) 60%, transparent 100%);
     display: flex;
     align-items: flex-end;
     padding: 40px;
@@ -833,7 +850,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 12px;
 }
 
-.logistics-card > p {
+.logistics-card>p {
     color: var(--dark-700);
     font-size: 0.95rem;
     margin-bottom: 20px;
@@ -866,7 +883,7 @@ h1, h2, h3, h4, h5, h6 {
     right: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(200,146,42,0.05) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(200, 146, 42, 0.05) 0%, transparent 70%);
     opacity: 0;
     transition: opacity var(--transition-slow);
     pointer-events: none;
@@ -893,7 +910,7 @@ h1, h2, h3, h4, h5, h6 {
 .logistics-image-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(10,14,23,0.9) 0%, rgba(10,14,23,0.2) 60%, transparent 100%);
+    background: linear-gradient(to top, rgba(10, 14, 23, 0.9) 0%, rgba(10, 14, 23, 0.2) 60%, transparent 100%);
     display: flex;
     align-items: flex-end;
     padding: 40px;
@@ -1141,12 +1158,10 @@ h1, h2, h3, h4, h5, h6 {
 .cta-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0.7) 0%,
-        rgba(255, 255, 255, 0.4) 50%,
-        rgba(255, 255, 255, 0.8) 100%
-    );
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.7) 0%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.8) 100%);
 }
 
 .cta-content {
@@ -1359,8 +1374,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer-logo img {
-    width: 44px;
-    height: 44px;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
     border-radius: var(--radius-sm);
 }
@@ -1502,8 +1517,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes whatsapp-pulse {
-    0%, 100% { box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4); }
-    50% { box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6); }
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+    }
+
+    50% {
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.6);
+    }
 }
 
 /* =====================================================
@@ -1547,33 +1569,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(0);
 }
 
-/* Particle styles */
-.particle {
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    background: var(--primary);
-    border-radius: 50%;
-    opacity: 0;
-    animation: particle-float linear infinite;
-}
 
-@keyframes particle-float {
-    0% {
-        opacity: 0;
-        transform: translateY(100vh) scale(0);
-    }
-    10% {
-        opacity: 0.6;
-    }
-    90% {
-        opacity: 0.3;
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-100px) scale(1);
-    }
-}
 
 /* =====================================================
    RESPONSIVE DESIGN

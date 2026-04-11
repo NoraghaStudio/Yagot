@@ -163,24 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         statsObserver.observe(heroStats);
     }
 
-    // ====================
-    // Particles
-    // ====================
-    const particlesContainer = document.getElementById('particles');
-    function createParticles() {
-        for (let i = 0; i < 30; i++) {
-            const particle = document.createElement('div');
-            particle.classList.add('particle');
-            particle.style.left = Math.random() * 100 + '%';
-            particle.style.width = Math.random() * 4 + 2 + 'px';
-            particle.style.height = particle.style.width;
-            particle.style.animationDuration = Math.random() * 8 + 6 + 's';
-            particle.style.animationDelay = Math.random() * 6 + 's';
-            particle.style.opacity = Math.random() * 0.4 + 0.1;
-            particlesContainer.appendChild(particle);
-        }
-    }
-    createParticles();
+
 
     // ====================
     // Contact Form
