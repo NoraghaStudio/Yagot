@@ -221,39 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000);
     });
 
-    // ====================
-    // Smooth Scroll for Anchor Links
-    // ====================
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                const navHeight = navbar.offsetHeight;
-                const targetPosition = target.offsetTop - navHeight;
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
 
-    // ====================
-    // Mining Service Items - Click to Contact
-    // ====================
-    document.querySelectorAll('.mining-service-item').forEach(item => {
-        item.addEventListener('click', () => {
-            const section = document.getElementById('contact');
-            if (section) {
-                const navHeight = navbar.offsetHeight;
-                window.scrollTo({
-                    top: section.offsetTop - navHeight,
-                    behavior: 'smooth'
-                });
-            }
-        });
-    });
 
     // ====================
     // Parallax effect on hero
