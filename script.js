@@ -202,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 نوع الخدمة: ${service}
 الرسالة: ${message}`;
 
-        const whatsappNumber = '966531341308';
+        const whatsappNumber = '966531341908';
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
         setTimeout(() => {

@@ -254,36 +254,22 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-}
-
-.hero-bg {
-    position: absolute;
-    inset: 0;
-}
-
-.hero-slide {
-    position: absolute;
-    inset: 0;
+    background-image: url('assets/images/hero.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0;
-    transform: scale(1.1);
-    transition: opacity 1.5s ease, transform 8s ease;
+    background-repeat: no-repeat;
 }
 
-.hero-slide.active {
-    opacity: 1;
-    transform: scale(1);
-}
+
 
 .hero-overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(
         180deg,
-        rgba(244, 244, 242, 0.8) 0%,
-        rgba(244, 244, 242, 0.4) 40%,
-        rgba(244, 244, 242, 0.9) 100%
+        rgba(255, 255, 255, 0.7) 0%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0.8) 100%
     );
     z-index: 1;
 }
