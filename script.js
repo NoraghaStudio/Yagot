@@ -43,20 +43,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // ====================
     const navToggle = document.getElementById('navToggle');
     const navLinks = document.getElementById('navLinks');
+    const navOverlay = document.getElementById('navOverlay');
 
-    navToggle.addEventListener('click', () => {
+    function toggleMenu() {
         navToggle.classList.toggle('active');
         navLinks.classList.toggle('active');
+        navOverlay.classList.toggle('active');
         document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-    });
+    }
+
+    function closeMenu() {
+        navToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+        navOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    navToggle.addEventListener('click', toggleMenu);
+    navOverlay.addEventListener('click', closeMenu);
 
     // Close mobile nav on link click
     navLinks.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            navToggle.classList.remove('active');
-            navLinks.classList.remove('active');
-            document.body.style.overflow = '';
-        });
+        link.addEventListener('click', closeMenu);
     });
 
     // ====================
