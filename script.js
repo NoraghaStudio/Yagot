@@ -172,9 +172,13 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.addEventListener('submit', (e) => {
         e.preventDefault();
 
+        const isEn = document.documentElement.lang === 'en';
         const btn = contactForm.querySelector('.btn');
         const originalHTML = btn.innerHTML;
-        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
+        
+        btn.innerHTML = isEn ? 
+            '<i class="fas fa-spinner fa-spin"></i> Sending...' : 
+            '<i class="fas fa-spinner fa-spin"></i> جاري الإرسال...';
         btn.disabled = true;
 
         // Get form values
@@ -186,12 +190,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = document.getElementById('message').value;
 
         // Build WhatsApp message
-        const whatsappMessage = `طلب تواصل جديد:
-الاسم: ${name}
-البريد الإلكتروني: ${email}
-رقم الجوال: ${phone}
-نوع الخدمة: ${service}
-الرسالة: ${message}`;
+        const labelName = isEn ? 'Name' : 'الاسم';
+        const labelEmail = isEn ? 'Email' : 'البريد الإلكتروني';
+        const labelPhone = isEn ? 'Phone' : 'رقم الجوال';
+        const labelService = isEn ? 'Service Type' : 'نوع الخدمة';
+        const labelMessage = isEn ? 'Message' : 'الرسالة';
+        const labelRequest = isEn ? 'New Contact Request' : 'طلب تواصل جديد';
+
+        const whatsappMessage = `${labelRequest}:
+${labelName}: ${name}
+${labelEmail}: ${email}
+${labelPhone}: ${phone}
+${labelService}: ${service}
+${labelMessage}: ${message}`;
 
         const whatsappNumber = '966531341908';
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
@@ -200,7 +211,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Open WhatsApp
             window.open(whatsappUrl, '_blank');
             
-            btn.innerHTML = '<i class="fas fa-check"></i> تم التوجيه للواتساب!';
+            btn.innerHTML = isEn ? 
+                '<i class="fas fa-check"></i> Redirecting to WhatsApp!' : 
+                '<i class="fas fa-check"></i> تم التوجيه للواتساب!';
             btn.style.background = 'linear-gradient(135deg, #2ecc71 0%, #27ae60 100%)';
 
             setTimeout(() => {
